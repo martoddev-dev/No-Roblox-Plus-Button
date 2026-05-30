@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Roblox Plus Button",
+  "version": "1.0",
+  "description": "Removes the Roblox Plus button from the sidebar",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.roblox.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+
+}

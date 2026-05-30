@@ -1,0 +1,9 @@
+/* Hide Roblox Plus button - multiple methods to ensure it works */
+li:has(a[href*="roblox.com/plus"]),
+li:has(a[href*="/plus"]) {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
+}

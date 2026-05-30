@@ -1,49 +1,51 @@
-# No Roblox Plus Button
+# Remove Roblox Plus Button Extension
 
-Simple browser extension that removes the Roblox Plus button for a cleaner Roblox experience.
+A simple browser extension that removes the "Roblox Plus" button from the Roblox sidebar.
 
-## Features
-- Removes the Roblox Plus button
-- Lightweight and fast
-- Works on all major browsers
-- No ads
-- No tracking
-- No data collection
+## Installation Instructions
 
-## Supported Browsers
-- Chrome
-- Edge
-- Brave
-- Opera
-- Firefox
+### Chrome / Brave / Edge
 
-## Installation
-
-### Chrome / Edge / Brave / Opera
-1. Download the ZIP file
-2. Extract the ZIP
-3. Open:
-   chrome://extensions
-4. Enable Developer Mode
-5. Click "Load unpacked"
-6. Select the extracted folder
+1. Open the extension folder in File Explorer
+2. In your browser, go to `chrome://extensions/` (or `edge://extensions/` for Edge)
+3. Enable **Developer mode** (toggle in top-right corner)
+4. Click **Load unpacked**
+5. Select this extension folder
+6. Done! The extension is now active
 
 ### Firefox
-1. Open:
-   about:debugging
-2. Click "This Firefox"
-3. Click "Load Temporary Add-on"
-4. Select the manifest.json file
 
-## Privacy
-This extension:
-- does NOT collect user data
-- does NOT track users
-- does NOT access passwords or cookies
-- does NOT connect to external servers
+1. Open the extension folder in File Explorer
+2. In Firefox, go to `about:debugging#/runtime/this-firefox`
+3. Click **Load Temporary Add-on**
+4. Select the `manifest.json` file from this folder
+5. Done! The extension is now active (temporary until Firefox closes)
 
-## Why?
-Some users prefer a cleaner Roblox interface without unnecessary buttons. This extension simply removes the Plus button and nothing else.
+**For permanent Firefox installation:**
+- Package as `.xpi` file and submit to Firefox Add-ons store, or
+- Use a signed version from Mozilla
 
-## License
-MIT License
+### Safari
+
+1. Open the extension folder in File Explorer
+2. In Safari, go to Develop → Allow Unsigned Extensions
+3. Then go to Safari → Settings → Extensions
+4. Click the **+** button and select this folder
+5. Done!
+
+## How It Works
+
+The extension runs a simple script that:
+- Finds the "Roblox Plus" button in the sidebar
+- Removes it from the page
+- Watches for any changes and removes it if it reappears
+
+No popups, no configuration needed - just install and use!
+
+## Compatibility
+
+- ✅ Chrome
+- ✅ Edge
+- ✅ Firefox (temporary or signed)
+- ✅ Brave
+- ✅ Safari
